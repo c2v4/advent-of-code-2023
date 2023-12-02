@@ -1,0 +1,46 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.0'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-jdk8', version: '0.30.2'
+
+    implementation platform('io.arrow-kt:arrow-stack:1.2.0')
+    implementation 'io.arrow-kt:arrow-core'
+    implementation 'io.arrow-kt:arrow-fx-coroutines'
+
+    implementation("io.reactivex.rxjava3:rxkotlin:3.0.0")
+    implementation group: 'com.google.guava', name: 'guava', version: '29.0-jre'
+
+
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    testImplementation group: 'io.kotest', name: 'kotest-runner-junit5-jvm', version: '4.2.5'
+    api group: 'io.kotest', name: 'kotest-assertions-core-jvm', version: '4.2.5'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.6.2'
+
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+kotlin {
+    jvmToolchain(8)
+}
+
+application {
+    mainClassName = 'MainKt'
+}
