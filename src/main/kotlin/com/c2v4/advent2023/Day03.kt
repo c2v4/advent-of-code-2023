@@ -1,6 +1,4 @@
-package com.c2v4.advent21
-
-import java.util.*
+package com.c2v4.advent2023
 
 fun gearRatio(input: String) = input.split(EOL).map { it.toCharArray() }.let { map ->
     map.indices.flatMap { i -> map[i].indices.map { j -> Pair(i, j) } }
@@ -51,6 +49,6 @@ fun gearRatio2(input: String) = input.split(EOL).map { it.toCharArray() }.let { 
 
 
 fun main(args: Array<String>) {
-    println(gearRatio("day3.txt".asResource()))
-    println(gearRatio2("day3.txt".asResource()))
+    println(gearRatio("day03.txt".asResource()))
+    println(gearRatio2("day03.txt".asResource()))
 }

@@ -1,9 +1,9 @@
-package com.c2v4.advent21
+package com.c2v4.advent2023
 
 import io.kotest.core.spec.style.AnnotationSpec
 import org.assertj.core.api.Assertions
 
-class Day3Test : AnnotationSpec() {
+class Day03Test : AnnotationSpec() {
     @Test
     fun test() {
         Assertions.assertThat(

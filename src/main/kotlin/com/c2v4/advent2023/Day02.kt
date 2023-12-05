@@ -1,4 +1,4 @@
-package com.c2v4.advent21
+package com.c2v4.advent2023
 
 import java.util.*
 import kotlin.math.max
@@ -49,6 +49,6 @@ private fun toPower(game: Game): Int = game.reveled.foldRight(Cube.entries.assoc
 
 
 fun main(args: Array<String>) {
-    println(cubeConundrum("day2.txt".asResource()))
-    println(cubeConundrum2("day2.txt".asResource()))
+    println(cubeConundrum("day02.txt".asResource()))
+    println(cubeConundrum2("day02.txt".asResource()))
 }

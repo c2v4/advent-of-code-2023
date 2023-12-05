@@ -1,4 +1,4 @@
-package com.c2v4.advent21
+package com.c2v4.advent2023
 
 fun trebuchet(input: String) = input.split(EOL).sumOf { findNumbers(it) }
 
@@ -27,6 +27,6 @@ private fun findNumbers2(line: String): Int =
 
 
 fun main(args: Array<String>) {
-    println(trebuchet("day1.txt".asResource()))
-    println(trebuchet2("day1.txt".asResource()))
+    println(trebuchet("day01.txt".asResource()))
+    println(trebuchet2("day01.txt".asResource()))
 }

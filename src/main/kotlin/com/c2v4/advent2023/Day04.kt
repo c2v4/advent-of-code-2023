@@ -1,9 +1,9 @@
-package com.c2v4.advent21
+package com.c2v4.advent2023
 
 import kotlin.math.pow
 
 fun scratchcards(input: String) = input.split(EOL).sumOf { line ->
-    2.toDouble().pow((winnings(line)-1).toDouble()).toInt()
+    2.toDouble().pow((winnings(line) -1).toDouble()).toInt()
 }
 
 private fun winnings(line: String): Int {
@@ -18,6 +18,6 @@ fun scratchcards2(input: String) = input.split(EOL).map { line ->
 }.first
 
 fun main(args: Array<String>) {
-    println(scratchcards("day4.txt".asResource()))
-    println(scratchcards2("day4.txt".asResource()))
+    println(scratchcards("day04.txt".asResource()))
+    println(scratchcards2("day04.txt".asResource()))
 }
