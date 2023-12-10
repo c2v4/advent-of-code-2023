@@ -25,7 +25,8 @@ private tailrec fun findNumber(start: Point, map: List<CharArray>, visited: List
     }
     return findNumber(start.copy(second = start.second + 1), map, visited + start)
 }
-private typealias Point = Pair<Int, Int>
+
+typealias Point = Pair<Int, Int>
 
 private fun getNeighbours(point: Point): Set<Point> {
     val (i, j) = point
