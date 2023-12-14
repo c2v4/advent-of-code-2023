@@ -46,7 +46,7 @@ private tailrec fun findWay(map: List<CharArray>, visited: List<Point>, directio
     return findWay(map, visited + next.first, next.second)
 }
 
-private enum class Direction {
+enum class Direction {
     UP, DOWN, LEFT, RIGHT;
 
     fun opposite(): Direction = when (this) {
