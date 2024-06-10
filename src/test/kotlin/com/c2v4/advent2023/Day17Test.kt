@@ -6,7 +6,6 @@ import org.assertj.core.api.Assertions
 class Day17Test : AnnotationSpec() {
 
     @Test
-    @Ignore
     fun test() {
         Assertions.assertThat(
             clumsy("2413432311323\n" +
