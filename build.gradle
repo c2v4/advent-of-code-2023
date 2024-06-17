@@ -19,7 +19,7 @@ dependencies {
     implementation 'io.arrow-kt:arrow-fx-coroutines'
 
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.0")
-    implementation group: 'com.google.guava', name: 'guava', version: '29.0-jre'
+    implementation group: 'com.google.guava', name: 'guava', version: '32.0.0-jre'
 
 
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
